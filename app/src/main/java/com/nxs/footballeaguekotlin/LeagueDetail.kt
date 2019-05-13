@@ -17,10 +17,10 @@ class LeagueDetail : AppCompatActivity() {
     }
 
     inner class MainUI(val item: LeagueModel) : AnkoComponent<LeagueDetail> {
-        val header = 1
-        val leagueImage = 2
-        val name = 3
-        val description = 4
+        private val header = 1
+        private val leagueImage = 2
+        private val name = 3
+        private val description = 4
         override fun createView(ui: AnkoContext<LeagueDetail>) = with(ui) {
             scrollView {
                 lparams(matchParent, matchParent)
