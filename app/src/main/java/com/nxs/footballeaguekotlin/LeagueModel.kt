@@ -1,5 +1,7 @@
 package com.nxs.footballeaguekotlin
 
-import java.io.Serializable
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-data class LeagueModel(val name: String, val description: String, val image: Int) : Serializable
+@Parcelize
+data class LeagueModel(val name: String, val description: String, val image: Int) : Parcelable

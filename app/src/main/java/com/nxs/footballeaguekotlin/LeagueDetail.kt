@@ -10,7 +10,7 @@ class LeagueDetail : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val item = intent.getSerializableExtra("detail") as LeagueModel
+        val item = intent.getParcelableExtra<LeagueModel>("detail")
         MainUI(item).setContentView(this)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
