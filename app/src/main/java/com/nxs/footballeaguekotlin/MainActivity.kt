@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         for (i in leagueName.indices) {
             leagueItems.add(LeagueModel(leagueName[i], leagueDescription[i], leagueImages.getResourceId(i, 0)))
         }
+        leagueImages.recycle()
     }
 
     inner class MainUI : AnkoComponent<MainActivity> {

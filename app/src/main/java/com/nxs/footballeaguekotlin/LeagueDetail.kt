@@ -16,7 +16,7 @@ class LeagueDetail : AppCompatActivity() {
 
     }
 
-    inner class MainUI(val item: LeagueModel) : AnkoComponent<LeagueDetail> {
+    inner class MainUI(private val item: LeagueModel) : AnkoComponent<LeagueDetail> {
         private val header = 1
         private val leagueImage = 2
         private val name = 3
